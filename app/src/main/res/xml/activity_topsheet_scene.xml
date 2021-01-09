@@ -11,7 +11,9 @@
             motion:touchAnchorId="@id/topSheet"
             motion:touchAnchorSide="bottom" />
         <KeyFrameSet>
-
+            <KeyAttribute motion:motionTarget="@id/scrollHandle"
+                android:alpha="0"
+                motion:framePosition="100"/>
         </KeyFrameSet>
     </Transition>
 
@@ -27,5 +29,13 @@
             motion:layout_constraintBottom_toTopOf="@+id/guideline3"
             motion:layout_constraintTop_toTopOf="parent"
             />
+<!--        <Constraint android:id="@+id/scrollHandle">-->
+<!--            <Layout-->
+<!--                motion:layout_constraintEnd_toEndOf="parent"-->
+<!--                motion:layout_constraintStart_toStartOf="parent"-->
+<!--                motion:layout_constraintBottom_toTopOf="@+id/guideline3"-->
+<!--                motion:layout_constraintTop_toTopOf="parent" />-->
+<!--            <PropertySet android:visibility="gone"/>-->
+<!--        </Constraint>-->
     </ConstraintSet>
 </MotionScene>
