@@ -12,12 +12,13 @@
         <OnSwipe motion:touchAnchorId="@+id/btn"
             motion:touchAnchorSide="right"
             motion:dragDirection="dragRight"/>
-<!--       <KeyFrameSet>-->
-<!--           <KeyPosition motion:framePosition="50"-->
-<!--               motion:percentY="0.25"-->
-<!--               motion:keyPositionType="parentRelative"-->
-<!--               motion:motionTarget="@id/btn"/>-->
-<!--       </KeyFrameSet>-->
+       <KeyFrameSet>
+           <KeyPosition
+               motion:framePosition="50"
+               motion:percentY="0.25"
+               motion:keyPositionType="pathRelative"
+               motion:motionTarget="@id/btn"/>
+       </KeyFrameSet>
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
