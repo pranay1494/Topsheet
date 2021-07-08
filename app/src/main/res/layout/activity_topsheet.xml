@@ -13,7 +13,9 @@
         android:background="#D6D1D2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:descendantFocusability="blocksDescendants">
 
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
@@ -21,7 +23,8 @@
 
         <com.google.android.material.chip.ChipGroup
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants">
 
             <com.google.android.material.chip.Chip
                 android:layout_width="wrap_content"

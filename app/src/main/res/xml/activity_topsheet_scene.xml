@@ -8,10 +8,11 @@
         motion:duration="1000">
         <OnSwipe
             motion:dragDirection="dragDown"
-            motion:touchAnchorId="@id/scrollHandle"
+            motion:touchAnchorId="@+id/scrollHandle"
+            motion:touchRegionId="@+id/scrollHandle"
             motion:touchAnchorSide="bottom" />
         <KeyFrameSet>
-            <KeyAttribute motion:motionTarget="@id/scrollHandle"
+            <KeyAttribute motion:motionTarget="@+id/scrollHandle"
                 android:alpha="0"
                 motion:framePosition="100"/>
         </KeyFrameSet>
