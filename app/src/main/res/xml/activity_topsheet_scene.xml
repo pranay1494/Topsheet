@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+        <OnSwipe
+            motion:dragDirection="dragDown"
+            motion:touchAnchorId="@+id/scrollHandle"
+            motion:touchRegionId="@+id/scrollHandle"
+            motion:touchAnchorSide="bottom" />
+        <KeyFrameSet>
+            <KeyAttribute motion:motionTarget="@+id/scrollHandle"
+                android:alpha="0"
+                motion:framePosition="100"/>
+        </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/topSheet"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintBottom_toTopOf="@+id/guideline3"
+            motion:layout_constraintTop_toTopOf="parent"
+            />
+<!--        <Constraint android:id="@+id/scrollHandle">-->
+<!--            <Layout-->
+<!--                motion:layout_constraintEnd_toEndOf="parent"-->
+<!--                motion:layout_constraintStart_toStartOf="parent"-->
+<!--                motion:layout_constraintBottom_toTopOf="@+id/guideline3"-->
+<!--                motion:layout_constraintTop_toTopOf="parent" />-->
+<!--            <PropertySet android:visibility="gone"/>-->
+<!--        </Constraint>-->
+    </ConstraintSet>
+</MotionScene>

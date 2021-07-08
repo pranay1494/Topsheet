@@ -11,6 +11,7 @@
 <!--        <OnClick motion:targetId="@+id/btn"/>-->
         <OnSwipe motion:touchAnchorId="@+id/btn"
             motion:touchAnchorSide="right"
+            motion:touchRegionId="@+id/btn"
             motion:dragDirection="dragRight"/>
        <KeyFrameSet>
            <KeyPosition
